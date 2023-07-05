@@ -1,0 +1,21 @@
+{
+  "name": "taro-route",
+  "version": "1.0.1",
+  "description": "",
+  "main": "./build/index.js",
+  "types": "./build",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rimraf build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ben",
+  "license": "ISC",
+  "dependencies": {
+    "@tarojs/taro": "^3.6.8",
+    "react": "^18.2.0"
+  }
+}
