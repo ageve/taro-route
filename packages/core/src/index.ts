@@ -19,7 +19,7 @@ export function createRoute<
     const { router } = routeInstance;
     console.log("currentPages", route, currentPages, router, routeInstance);
 
-    if (router === undefined)
+    if (!router)
       throw new Error("It is forbidden to use on non-routing pages.");
 
     const from =
@@ -27,7 +27,12 @@ export function createRoute<
         ? currentPages[currentPages.length - 2].route
         : undefined;
     const routeMeta = routeList.find((item) => {
-      return item.path === router?.path;
+      // NOTE: 修复 router?.path 错误，当 热更新时，这里 router?.path 会带上 queryString
+      let path = router.path;
+      if (/\?/.test(path)) {
+        path = path.split("?")[0];
+      }
+      return item.path === path;
     });
     if (routeMeta) {
       return {
