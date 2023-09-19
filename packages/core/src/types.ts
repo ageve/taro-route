@@ -16,3 +16,8 @@ export interface Options {
   method?: Method;
   reveal?: boolean;
 }
+
+export interface CallbackResult {
+  /** 错误信息 */
+  errMsg: string;
+}

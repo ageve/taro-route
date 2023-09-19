@@ -19,9 +19,7 @@ const routeList: RouteList<Name> = [
   },
 ];
 
-const { goRoute: go, getRoute } = createRoute<Name, QueryMap>(routeList);
-
-export const goRoute = go;
+export const { goPage, getRoute } = createRoute<Name, QueryMap>(routeList);
 
 export function useRoute<U extends Name>() {
   const routeState = useMemo(() => {
