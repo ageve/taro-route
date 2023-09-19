@@ -1,7 +1,7 @@
 import { View, Text } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
 import "./index.scss";
-import { useRoute } from "../../router";
+import { useRoute, goPage } from "../../router";
 import { useEffect } from "react";
 // import { goRoute } from "../../router";
 
@@ -17,7 +17,12 @@ export default function Index() {
   });
 
   return (
-    <View className="index">
+    <View
+      className="index"
+      onClick={() => {
+        goPage("index", { query: {} });
+      }}
+    >
       <Text>我的</Text>
     </View>
   );

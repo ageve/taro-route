@@ -16,10 +16,7 @@ export default function Index() {
   });
 
   return (
-    <View
-      className="index"
-      onClick={() => goPage("my", { query: { uid: "12312" } })}
-    >
+    <View className="index" onClick={() => goPage("my")}>
       <Text>Index</Text>
     </View>
   );

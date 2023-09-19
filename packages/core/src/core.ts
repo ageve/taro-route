@@ -47,7 +47,7 @@ export default function createRoute<
   function goPage<U extends Name>(
     name: U,
     data?: {
-      query?: QueryList[U];
+      query: QueryList[U] extends undefined ? undefined : QueryList[U];
       data?: unknown;
       reveal?: boolean;
       method?: Method;
