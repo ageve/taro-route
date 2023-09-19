@@ -74,7 +74,7 @@ export default function createRoute<
       if (data?.reveal) {
         // TODO: 实现透传 query 和 data 的组合数据
       }
-      if (routeMeta.isTabPage) {
+      if (routeMeta.isTab) {
         Taro.switchTab({ url });
       } else {
         switch (method) {

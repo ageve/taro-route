@@ -1,7 +1,7 @@
 export interface RouteMeta<Name extends string> {
   name: Name;
   path: string;
-  isTabPage: boolean;
+  isTab: boolean;
 }
 
 export type RouteList<Name extends string> = RouteMeta<Name>[];
