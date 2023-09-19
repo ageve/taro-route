@@ -46,22 +46,22 @@ importers:
         version: 3.6.8(@types/react@18.0.0)(react@18.2.0)
       '@tarojs/plugin-platform-h5':
         specifier: 3.6.8
-        version: 3.6.8(@types/react@18.0.0)(react@18.2.0)
+        version: 3.6.8(@types/react@18.0.0)
       '@tarojs/plugin-platform-jd':
         specifier: 3.6.8
         version: 3.6.8(@types/react@18.0.0)
       '@tarojs/plugin-platform-qq':
         specifier: 3.6.8
-        version: 3.6.8(@types/react@18.0.0)(react@18.2.0)
+        version: 3.6.8(@types/react@18.0.0)
       '@tarojs/plugin-platform-swan':
         specifier: 3.6.8
-        version: 3.6.8(@types/react@18.0.0)(react@18.2.0)
+        version: 3.6.8(@types/react@18.0.0)
       '@tarojs/plugin-platform-tt':
         specifier: 3.6.8
-        version: 3.6.8(@types/react@18.0.0)(react@18.2.0)
+        version: 3.6.8(@types/react@18.0.0)
       '@tarojs/plugin-platform-weapp':
         specifier: 3.6.8
-        version: 3.6.8(@types/react@18.0.0)(react@18.2.0)
+        version: 3.6.8(@types/react@18.0.0)
       '@tarojs/react':
         specifier: 3.6.8
         version: 3.6.8(react@18.2.0)
@@ -3122,7 +3122,7 @@ packages:
       - '@types/webpack'
       - '@types/webpack-dev-server'
 
-  /@tarojs/components-react@3.6.8(@types/react@18.0.0)(react@18.2.0):
+  /@tarojs/components-react@3.6.8(@types/react@18.0.0):
     resolution: {integrity: sha512-IVbT4kCvgHX4iDu8ErRq1vCSSxD0Fpd1KYfMV7UX98MuFweHdr/Ms/LC0uzKOWtdYNat59WZyOHukhl0xZ5vCQ==}
     dependencies:
       '@babel/runtime': 7.22.5
@@ -3138,7 +3138,6 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - vue
     dev: false
 
@@ -3384,15 +3383,15 @@ packages:
       - supports-color
       - vue
 
-  /@tarojs/plugin-platform-h5@3.6.8(@types/react@18.0.0)(react@18.2.0):
+  /@tarojs/plugin-platform-h5@3.6.8(@types/react@18.0.0):
     resolution: {integrity: sha512-uDlsEI9OnDrme6kS8zppEDd+mu04Oc5vFwqgW2DoI5HuoHn4wKm/HD0sxc83ga0FNoPd1OO/OT/4qhdBTUhivA==}
     dependencies:
       '@tarojs/components': 3.6.8(@types/react@18.0.0)(react@18.2.0)
-      '@tarojs/components-react': 3.6.8(@types/react@18.0.0)(react@18.2.0)
+      '@tarojs/components-react': 3.6.8(@types/react@18.0.0)
       '@tarojs/router': 3.6.8(@types/react@18.0.0)
       '@tarojs/service': 3.6.8(@types/react@18.0.0)
       '@tarojs/shared': 3.6.8
-      '@tarojs/taro-h5': 3.6.8(@types/react@18.0.0)(react@18.2.0)
+      '@tarojs/taro-h5': 3.6.8(@types/react@18.0.0)
       babel-plugin-transform-taroapi: 3.6.8
       change-case: 4.1.2
       lodash-es: 4.17.21
@@ -3402,7 +3401,6 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
     dev: false
@@ -3419,10 +3417,10 @@ packages:
       - supports-color
       - vue
 
-  /@tarojs/plugin-platform-qq@3.6.8(@types/react@18.0.0)(react@18.2.0):
+  /@tarojs/plugin-platform-qq@3.6.8(@types/react@18.0.0):
     resolution: {integrity: sha512-jrqQ+fTWey02kEgHgFPO4zQm3J6IFdJ5KUk0S/xQP1yDRkm3OXr+V6g6+eJuRK/LmtHzCVEDpKwr7+DeFonGmw==}
     dependencies:
-      '@tarojs/plugin-platform-weapp': 3.6.8(@types/react@18.0.0)(react@18.2.0)
+      '@tarojs/plugin-platform-weapp': 3.6.8(@types/react@18.0.0)
       '@tarojs/service': 3.6.8(@types/react@18.0.0)
       '@tarojs/shared': 3.6.8
     transitivePeerDependencies:
@@ -3430,11 +3428,10 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
 
-  /@tarojs/plugin-platform-swan@3.6.8(@types/react@18.0.0)(react@18.2.0):
+  /@tarojs/plugin-platform-swan@3.6.8(@types/react@18.0.0):
     resolution: {integrity: sha512-87pvEbJfUfX8p5wHh4GzoisgV1BqOAfs15kQ2s+YyMEr8FWaTO+bpOXpjGw2TAhwzbcc1jbDin1Juh8aR+J5cg==}
     dependencies:
       '@tarojs/components': 3.6.8(@types/react@18.0.0)(react@18.2.0)
@@ -3445,11 +3442,10 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
 
-  /@tarojs/plugin-platform-tt@3.6.8(@types/react@18.0.0)(react@18.2.0):
+  /@tarojs/plugin-platform-tt@3.6.8(@types/react@18.0.0):
     resolution: {integrity: sha512-hwaa4pVjDxcD678aeC9Anetcbjw3PRLxZZoqVzkJR9s/U/XZssQY629bvEC+dlojzhGCUJ3qBKYkGqxMLXtTQA==}
     dependencies:
       '@tarojs/components': 3.6.8(@types/react@18.0.0)(react@18.2.0)
@@ -3460,11 +3456,10 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
 
-  /@tarojs/plugin-platform-weapp@3.6.8(@types/react@18.0.0)(react@18.2.0):
+  /@tarojs/plugin-platform-weapp@3.6.8(@types/react@18.0.0):
     resolution: {integrity: sha512-g3H1XOvXJ9oZE0Qub+y6ImKph7SgJfmJF7YTiAHx8Yklzid/X2AKpDELgeL6kxqqI5A8sevgtS80hIFfhOd1Yw==}
     dependencies:
       '@tarojs/components': 3.6.8(@types/react@18.0.0)(react@18.2.0)
@@ -3475,7 +3470,6 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
 
@@ -3573,7 +3567,7 @@ packages:
   /@tarojs/shared@3.6.8:
     resolution: {integrity: sha512-niHYE2+9EtpfiLdJCdXiZ6ZirSNbPu5HaPMSZlRXYf1KzEWiyzGSpn/Cew4M3gbWti101xfVjNKZLTD9NlUmGg==}
 
-  /@tarojs/taro-h5@3.6.8(@types/react@18.0.0)(react@18.2.0):
+  /@tarojs/taro-h5@3.6.8(@types/react@18.0.0):
     resolution: {integrity: sha512-A1JxCbkDrF9xNSwZfoPma++1U6q+Wp0Cf1DjCILZw+OZgQbKJrYpxOSvSDfATMuMrkZ1c3U/PVrhubr7UnuWtA==}
     dependencies:
       '@tarojs/api': 3.6.8
@@ -3594,7 +3588,6 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - vue
     dev: false
 
@@ -3686,10 +3679,10 @@ packages:
       '@tarojs/helper': 3.6.8
       '@tarojs/plugin-platform-alipay': 3.6.8(@types/react@18.0.0)(react@18.2.0)
       '@tarojs/plugin-platform-jd': 3.6.8(@types/react@18.0.0)
-      '@tarojs/plugin-platform-qq': 3.6.8(@types/react@18.0.0)(react@18.2.0)
-      '@tarojs/plugin-platform-swan': 3.6.8(@types/react@18.0.0)(react@18.2.0)
-      '@tarojs/plugin-platform-tt': 3.6.8(@types/react@18.0.0)(react@18.2.0)
-      '@tarojs/plugin-platform-weapp': 3.6.8(@types/react@18.0.0)(react@18.2.0)
+      '@tarojs/plugin-platform-qq': 3.6.8(@types/react@18.0.0)
+      '@tarojs/plugin-platform-swan': 3.6.8(@types/react@18.0.0)
+      '@tarojs/plugin-platform-tt': 3.6.8(@types/react@18.0.0)
+      '@tarojs/plugin-platform-weapp': 3.6.8(@types/react@18.0.0)
       '@tarojs/runner-utils': 3.6.8
       '@tarojs/runtime': 3.6.8
       '@tarojs/shared': 3.6.8

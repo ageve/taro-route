@@ -20,7 +20,7 @@ export default function Index() {
     <View
       className="index"
       onClick={() => {
-        goPage("index", { query: {} });
+        goPage("index", { method: "navigate" });
       }}
     >
       <Text>我的</Text>

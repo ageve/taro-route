@@ -16,7 +16,7 @@ export default function createRoute<
     const { route } = currentPage;
 
     const { router } = routeInstance;
-    console.log("currentPages", route, currentPages, router, routeInstance);
+    // console.log("currentPages", route, currentPages, router, routeInstance);
 
     if (!router)
       throw new Error("It is forbidden to use on non-routing pages.");
@@ -44,34 +44,38 @@ export default function createRoute<
     }
   }
 
+  type PlainOptions = {
+    reveal?: boolean;
+    method?: Method;
+  };
+
   function goPage<U extends Name>(
     name: U,
-    data?: {
-      query: QueryList[U] extends undefined ? undefined : QueryList[U];
-      data?: unknown;
-      reveal?: boolean;
-      method?: Method;
-    }
+    options?: undefined extends QueryList[U]
+      ? { query?: QueryList[U] } & PlainOptions
+      : {
+          query: QueryList[U];
+        } & PlainOptions
   ) {
     // 否则，根据选项参数中的 method 字段确定使用的路由跳转方法
-    const method = data?.method || "navigate";
+    const method = options?.method || "navigate";
     const routeMeta = routeList.find((item) => {
       return item.name === name;
     });
     if (routeMeta) {
       let { path } = routeMeta;
       let url = path;
-      if (data?.query) {
-        const { query: queryMap } = data;
+      if (options?.query) {
+        const { query: queryMap } = options;
         const query = new URLSearchParams();
         for (let key in queryMap) {
           query.append(key, queryMap[key]);
         }
         const queryString = query.toString();
         url = `${path}?${queryString}`;
-        console.log("queryString", queryString);
+        // console.log("queryString", queryString);
       }
-      if (data?.reveal) {
+      if (options?.reveal) {
         // TODO: 实现透传 query 和 data 的组合数据
       }
       if (routeMeta.isTab) {

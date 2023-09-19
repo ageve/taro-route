@@ -11,12 +11,12 @@ const routeList: RouteList<Name> = [
   {
     name: "index",
     path: "/pages/index/index",
-    isTabPage: false,
+    isTab: false,
   },
   {
     name: "my",
     path: "/pages/my/index",
-    isTabPage: false,
+    isTab: false,
   },
 ];
 
